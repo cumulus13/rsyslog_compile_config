@@ -1,0 +1,39 @@
+#!/usr/bin/bash
+
+#--enable-memcheck
+#--enable-omzmq3
+#--enable-imzmq3 
+CPPFLAGS="-I/usr/include/tcl8.6/"
+./configure \
+--prefix=/opt/rsyslog3 \
+--enable-kmsg \
+--enable-imjournal \
+--enable-libsystemd \
+--enable-debug \
+--enable-mysql \
+--enable-pgsql \
+--enable-snmp \
+--enable-mail \
+--enable-mmnormalize \
+--enable-imfile \
+--enable-imptcp \
+--enable-impstats \
+--enable-omprog \
+--enable-omstdout \
+--enable-omuxsock \
+--enable-omruleset \
+--enable-omkafka \
+--enable-ommongodb \
+--enable-imczmq \
+--enable-omczmq \
+--enable-omhiredis \
+--enable-omhttpfs \
+--enable-omtcl \
+--enable-omrabbitmq \
+--enable-jemalloc \
+--enable-usertools \
+--enable-omfile \
+--enable-mmjsonparse \
+--enable-diagtools \
+--enable-omudpspoof \
+--enable-imdiag 
